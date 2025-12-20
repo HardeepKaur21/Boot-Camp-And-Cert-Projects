@@ -1,0 +1,50 @@
+body {
+  background-image: url("mountains.jpg");
+  background-size: 100vw 100vh;
+
+  /*WHYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY*/
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+}
+
+.profile-card-container {
+  background-color: white;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgb(56, 56, 56);
+  padding: 20px;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #091a41;
+}
+
+button {
+  margin: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 0px;
+  font-family: sans-serif;
+}
+
+p {
+  font-family: sans-serif;
+  color: rgb(100, 99, 99);
+}
+
+button {
+  border-radius: 10px;
+  background-color: #345086;
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #345086;
+}
