@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background-color: rgb(254, 240, 217);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+div.main-card {
+  width: 550px;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.505);
+}
+
+div.main-card img {
+  width: 100%;
+}
+
+div.main-card div.content {
+  padding: 10px 30px;
+}
+
+div.main-card div.content p {
+  color: #555;
+  font-size: 14px;
+}
+
+div.prep-time {
+  background-color: rgba(228, 220, 254, 0.441);
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+div.prep-time p {
+  padding: 0;
+}
+
+div.prep-time ul {
+  margin: 0 0 10px 30px;
+  padding: 0;
+  line-height: 40px;
+}
+
+div.prep-time h3 {
+  margin: 5px 0 10px 0;
+}
+
+div.content h3.ingredients {
+  margin-bottom: 5px;
+}
+
+div.content ul {
+  margin-top: 5px;
+  line-height: 35px;
+}
+
+div.intructions {
+  background-color: rgba(228, 220, 254, 0.441);
+  border-radius: 20px;
+  padding: 10px 40px;
+}
+
+div.intructions h3 {
+  margin-top: 5px;
+}
+
+div.intructions ol {
+  padding-left: 20px;
+}
+
+div.intructions ol li {
+  margin-bottom: 20px;
+}
+
+div.nutrition {
+  background-color: rgba(228, 220, 254, 0.441);
+  border-radius: 20px;
+  padding: 10px 40px;
+  margin: 20px 0;
+}
+
+div.nutrition div.nutrition-row,
+div.nutrition div.nutrition-row-last {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.nutrition div.nutrition-row p,
+div.nutrition div.nutrition-row-last p {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+div.nutrition div.nutrition-row-last p {
+  padding-bottom: 15px;
+}
