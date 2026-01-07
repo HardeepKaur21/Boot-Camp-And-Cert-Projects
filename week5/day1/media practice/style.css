@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Font- Weight Parameters::after
+Common font weight values 
+    100: Thin
+    200: Extra light or ultra light
+    300: Light
+    400: Normal
+    500: Medium
+    600: Semi bold or demi bold
+    700: Bold
+    800: Extra bold or ultra bold
+    900: Black or heavy
+*/
+.container::after {
+  content: "Default View";
+  font-family: sans-serif;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    background-color: rgb(36, 75, 247);
+  }
+
+  .container::after {
+    content: "Mobile View";
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  body {
+    background-color: rgb(1, 138, 54);
+  }
+
+  .container::after {
+    content: "Tablet View";
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: red;
+  }
+
+  .container::after {
+    content: "Desktop View";
+    color: white;
+  }
+}
