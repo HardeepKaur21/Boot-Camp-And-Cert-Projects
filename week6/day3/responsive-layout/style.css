@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  margin: 1.5vh 0;
+}
+
+/* HEADER --------------------------------------------- */
+header div.title {
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 3vh 0 4vh;
+}
+
+header div.title h1 {
+  font-size: 2.7em;
+  margin-bottom: 0.5vh;
+}
+
+header div.title p {
+  font-size: 0.8em;
+}
+
+header div.logo-links {
+  padding: 5px 20px;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div.logo-links a {
+  color: white;
+  text-decoration: none;
+}
+
+header div.logo-links a.logo {
+  font-size: 1.3em;
+  font-weight: lighter;
+  color: #ccc;
+}
+
+header div.logo-links a.logo span {
+  font-weight: 800;
+  color: white;
+}
+
+header div.links {
+  display: flex;
+  gap: 2.5vw;
+  align-items: center;
+}
+
+header div.links a:hover {
+  color: darkgreen;
+}
+
+header div.links a.signup {
+  background-color: darkgreen;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid darkgreen;
+}
+
+header div.links a.signup:hover {
+  background-color: #222;
+}
+
+header .burger {
+  color: #fff;
+  font-size: 1.5em;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  header div.links {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    padding: 5vh 1vh;
+    top: 40px;
+    left: 0px;
+    width: 100%;
+  }
+
+  header div.links a {
+    margin-bottom: 5vh;
+  }
+
+  header .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  header div.logo-links {
+    position: relative;
+  }
+
+  header div.links.active {
+    display: flex;
+  }
+}
+
+/* MAIN ------------------------------------ */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+main .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 80vw;
+  overflow: hidden;
+  height: 90%;
+  flex: 1;
+}
+
+main .side-bar {
+  flex: 1;
+  background-color: #ccc;
+  padding: 20px;
+  overflow-y: auto;
+  height: 93%;
+}
+
+main .side-bar h3 {
+  margin: 1.5vh 0;
+  font-size: 0.99em;
+}
+
+main .side-bar p {
+  font-size: 0.8em;
+}
+
+main .articles {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  overflow-y: auto;
+  height: 95%;
+}
+
+main .articles article {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+main article time {
+  font-size: 0.7em;
+  color: #999;
+  font-weight: 600;
+}
+
+main article h2 {
+  font-size: 1.5em;
+}
+
+main article p {
+  font-size: 0.7em;
+}
+
+main article p.readit {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  main .content {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER ---------------------------------- */
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 2vh 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+footer p a {
+  color: #fff;
+}
+
+footer .tribute {
+  margin: 2vh 0 0;
+  font-size: 0.5em;
+}
