@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" class="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADER ------------------------------------------------------------------ -->
+    <header>
+      <!-- left section -->
+      <div class="menu-logo">
+        <i class="material-icons logo" onClick="toggleAside()">menu</i>
+        <img src="logo.png" alt="youtube logo" />
+      </div>
+
+      <!-- mid section -->
+      <div class="search-bar">
+        <form>
+          <input type="text" placeholder="Search" />
+          <button><i class="material-icons">search</i></button>
+        </form>
+
+        <i class="material-icons mic">mic</i>
+      </div>
+
+      <!-- right section -->
+      <div class="other-icons">
+        <a href=""><i class="material-icons">video_call</i></a>
+        <a href=""><i class="material-icons">apps</i></a>
+        <a href="" class="hidden"
+          ><i class="material-icons">notifications</i></a
+        >
+        <a href="" class="hidden"
+          ><i class="material-icons">account_circle</i></a
+        >
+      </div>
+    </header>
+
+    <!-- MAIN --------------------------------------------------------------------- -->
+    <div class="content-area">
+      <!-- ASIDE MENU -->
+      <aside id="aside-menu">
+        <nav>
+          <a href="#" class="nav-link active">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons">explore</i>
+            <span>Explore</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">subscriptions</i>
+            <span>Subscriptions</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <li class="material-icons-outlined">ondemand_video</li>
+            <span>Originals</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons">play_circle_outline</i>
+            <span>YouTube Music</span>
+          </a>
+
+          <hr />
+          <!-- ------------------ -->
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">video_library</i>
+            <span>Library</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">smart_display</i>
+            <span>Your Videos</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">watch_later</i>
+            <span>Watch Later</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">download</i>
+            <span>Downloads</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="material-icons-outlined">thumb_up</i>
+            <span>Linked Videos</span>
+          </a>
+
+          <hr />
+          <!-- ------------------ -->
+
+          <p>Subscriptions</p>
+          <a href="#" class="nav-link">
+            <img class="channel-img" src="fire.png" alt="" />
+            <span>LEAD Education</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img class="channel-img" src="flower.jpg" alt="" />
+            <span>Tech with Tim</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img class="channel-img" src="heart.png" alt="" />
+            <span>Layze</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img class="channel-img" src="star.png" alt="" />
+            <span>Algo Master IO</span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <img class="channel-img" src="diamond.jpg" alt="" />
+            <span>Classical Music</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- MAIN CONTENT (VIDEOS)-->
+      <main>
+        <div class="videos-container">
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail1.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="fire.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title">The Life of a Developer</a>
+
+                <a href="#" class="video-creator">LEAD Education</a>
+                <span>10M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail2.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="flower.jpg" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >The Equation That Could Change Physics Forever!</a
+                >
+
+                <a href="#" class="video-creator">Tech with Tim</a>
+                <span>15M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail3.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="diamond.jpg" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >Dark and Mysterious Classical Music</a
+                >
+
+                <a href="#" class="video-creator">Classical Music</a>
+                <span>352K • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail4.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="flower.jpg" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >What If We Build the Ultimate Weapon?</a
+                >
+
+                <a href="#" class="video-creator">Tech with Tim</a>
+                <span>1M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail5.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="heart.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >Giant Boba Tea?! This is INSANE!</a
+                >
+
+                <a href="#" class="video-creator">Layze</a>
+                <span>30M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail6.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="fire.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title">React Explained Visually!</a>
+
+                <a href="#" class="video-creator">LEAD Education</a>
+                <span>15M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail7.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="star.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >How AI is Solving the Biggest Scientific Mysteries!</a
+                >
+
+                <a href="#" class="video-creator">Algo Master IO</a>
+                <span>8M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail8.jpg" alt="" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="diamond.jpg" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >The Timeless Elegance of the Rose Garden: Classical Music</a
+                >
+
+                <a href="#" class="video-creator">Classical Music</a>
+                <span>587K • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail9.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="star.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >Google Mock Interview: Real Questions, Real Insights!</a
+                >
+
+                <a href="#" class="video-creator">Algo Master IO</a>
+                <span>2M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail10.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="fire.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >Math for Computer Science: What You NEED to Know!</a
+                >
+
+                <a href="#" class="video-creator">LEAD Education</a>
+                <span>18M • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="thumbnail11.jpg" alt="" />
+            </div>
+
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="star.png" alt="" />
+              </div>
+              <div class="title">
+                <a href="#" class="video-title"
+                  >What Made Them Lifelong Learners?</a
+                >
+
+                <a href="#" class="video-creator">Algo Master IO</a>
+                <span>874K • 3 Months ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function toggleAside() {
+        const aside = document.getElementById("aside-menu");
+        aside.classList.toggle("aside-active");
+      }
+    </script>
+  </body>
+</html>
