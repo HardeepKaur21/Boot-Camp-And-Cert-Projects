@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  width: 1440px;
+  height: 684px;
+}
+
+/* select all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-image: url(assets/bg.png);
+  background-size: cover;
+
+  /* top - sides - bottom */
+  padding: 40px 40px 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+}
+
+/* CONTACT --------------------------------------------------------------------- */
+.contact {
+  background-color: #fff;
+  border-radius: 16px;
+
+  /* top/bottom - sides */
+  padding: 32px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 96px;
+}
+
+/* CONTACT 1  ---------------------------*/
+.contact-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 190px;
+}
+
+.logo {
+  width: 70px;
+  height: 44px;
+}
+
+.navigation {
+  display: flex;
+  gap: 16px;
+}
+
+.navigation p {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 4%;
+  color: #767575;
+  margin-bottom: 24px;
+}
+
+.info,
+.menu {
+  width: 213px;
+}
+
+.navigation li {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: #1b1819;
+  list-style: none;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.call {
+  text-align: end;
+}
+
+a.btn {
+  border-radius: 8px;
+  background-color: #1b1819;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.call p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15.6px;
+}
+
+/* CONTACT-2 ---------------------------------- */
+.contact-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.socials-w {
+  background-color: #1b1819;
+  height: 16px;
+  width: 16px;
+  border-radius: 40px;
+  padding: 12px;
+  margin-right: 8px;
+  overflow: visible;
+}
+
+.socials-t {
+  background-color: #1b1819;
+  height: 14px;
+  width: 18px;
+  border-radius: 40px;
+  padding: 13px 11px;
+  margin-right: 8px;
+  overflow: visible;
+}
+
+.address {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15.6px;
+  margin-left: -46px;
+}
+
+/* EMAIL ---------------------------------------------------------------- */
+.email {
+  display: flex;
+}
+
+.email h2 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -2%;
+  width: 672px;
+}
+
+.email form {
+  align-content: end;
+}
+
+.email p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.6px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.email-input-container {
+  position: relative;
+  width: 630px;
+}
+
+.email-input-container input {
+  width: 100%;
+  padding: 30px 24px 10px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  height: 26px;
+}
+
+.email-input-container label {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  margin-bottom: 8px;
+}
+
+.email-input-container button {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.email-input-container button img {
+  width: 24px;
+  height: 24px;
+}
+
+.email-input-container input::placeholder {
+  color: rgba(255, 255, 255);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+/* COPYRIGHT ------------------------------------------------------------- */
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright p {
+  color: #fff;
+  font-size: 10px;
+  line-height: 14px;
+}
