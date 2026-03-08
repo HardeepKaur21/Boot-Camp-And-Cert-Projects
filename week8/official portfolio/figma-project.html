@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Landing Page Overview</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="back-btn-container">
+        <a href="index.html#projects" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+      </div>
+      <a href="index.html" class="logo">Hardeep</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="project-hero">
+      <h1>Figma Landing Page Recreation</h1>
+      <p>
+        A deep dive into how each component was built to match
+        <a
+          href="https://www.figma.com/design/swIhzocMi5y1WWtdC9Lo6n/Recreations?node-id=6-2&p=f&t=UGCTOlEYDCD6oJ9m-0"
+          >this</a
+        >
+        original Figma design.
+      </p>
+
+      <!-- Project Screenshot -->
+      <div class="project-screenshot-container">
+        <img
+          src="assets/project1.png"
+          alt="Figma Project Screenshot"
+          class="project-screenshot"
+        />
+      </div>
+
+      <a href="https://harr-figma-to-code.netlify.app/" class="live-demo-btn"
+        >View Live Website</a
+      >
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="overview">
+      <h2>Project Breakdown</h2>
+      <p class="intro">
+        This project involved translating a Figma landing page into a pixel
+        perfect representation of it in a website.
+      </p>
+
+      <p class="intro">
+        Below are code snippets showcasing key sections of the project. These
+        provide a peek into the implementation of major features rather than the
+        full code structure. Each snippet comes with a brief explanation for
+        those interested in understanding how specific functionalities were
+        built.
+      </p>
+
+      <div class="overview-container">
+        <div class="overview-card">
+          <h3>🔹 Header & Navigation</h3>
+          <p>
+            This code defines a navigation header with a logo, a menu, and a
+            "Contact Us" button. The CSS styles the navigation bar with flexbox
+            for alignment, rounded buttons, and spacing between items. The
+            .active class highlights the current page, while the .btn class
+            styles the contact button with a distinct background. The nav ul
+            ensures the menu items are displayed in a row with equal spacing.
+            Below you can find some snippets of the code I wrote for this
+            project:
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/figma/header-html.png"
+              alt="Header HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/figma/header-css.png"
+              alt="Header CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <h3>🔹 Hero Section</h3>
+          <p>
+            This code defines a hero section with a title, a short description,
+            and a call-to-action button. The .intro-p styles the introductory
+            text with a blurred background and rounded edges, making it visually
+            distinct. The h1 is styled for bold typography, ensuring a strong
+            impact, while .subtitle provides additional context. The "Buy Now"
+            button encourages user interaction, and the "Spots Available"
+            message adds urgency.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/figma/hero-html.png"
+              alt="Hero HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/figma/hero-css.png"
+              alt="Hero CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <h3>🔹 Image Gallery</h3>
+          <p>
+            The code snippet below defines an image gallery section displaying
+            project images with labels. The .image class applies a gradient
+            background, rounded corners, and a shadow for a modern look. Images
+            inside .left and .right have adjusted padding and different border
+            radii to create a structured layout. The .image-label p styles the
+            descriptions with a clean, readable font to enhance presentation.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/figma/images-html.png"
+              alt="Gallery HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/figma/images-css.png"
+              alt="Gallery CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+
+        <div class="overview-card">
+          <h3>🔹 Footer</h3>
+          <p>
+            This code defines a footer section displaying a star rating and
+            brand logos for credibility. The p is styled for readability,
+            ensuring the rating stands out. The .stars and .logos images provide
+            visual context, but a better approach would be to download
+            individual logos from Figma instead of using a single container
+            image. This would improve flexibility, allowing better
+            responsiveness and optimization, such as adjusting spacing, hover
+            effects, or dynamically loading different logos based on screen
+            size.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/figma/footer-html.png"
+              alt="Footer HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/figma/footer-css.png"
+              alt="Footer CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2024 Hardeep | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
