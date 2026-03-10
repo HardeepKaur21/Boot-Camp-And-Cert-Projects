@@ -1,0 +1,289 @@
+/* Default -------- */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header -------------------- */
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 3vw;
+  background: #1d1d1d;
+  backdrop-filter: blur(10px);
+  z-index: 1100;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo::after {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: #aa00ff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  top: 6px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center; /* Align icon and text */
+  gap: 8px; /* Add space between icon and text */
+  padding: 7px 10px;
+  background: #aa00ff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #7700b2;
+}
+
+/* Style the Font Awesome icon */
+.back-btn i {
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+/* Hero ------------- */
+.project-hero,
+.overview {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+.live-demo-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #aa00ff;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-top: 40px;
+}
+
+.live-demo-btn:hover {
+  background: #7700b2;
+}
+
+.project-hero {
+  background: #1d1d1d;
+  color: white;
+  text-align: center;
+  padding: 80px 5vw;
+}
+
+.project-hero h1 {
+  font-size: 2.5em;
+  color: #aa00ff;
+  margin-bottom: 20px;
+}
+
+.project-hero p {
+  font-size: 1.2rem;
+  color: #bbb;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-hero p a {
+  text-decoration: none;
+  color: #aa00ff;
+  font-weight: 600;
+}
+
+.project-screenshot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.project-screenshot {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-screenshot:hover {
+  transform: scale(1.02);
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .project-screenshot {
+    max-width: 95%;
+  }
+}
+
+.overview {
+  padding: 80px 3vw;
+  background: #292929;
+  color: white;
+  text-align: center;
+}
+
+.overview h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overview p.intro {
+  margin: 40px auto 40px;
+  max-width: 800px;
+}
+
+.overview p {
+  font-size: 1.1rem;
+  color: #bbb;
+  margin: 0 10px;
+  line-height: 1.5;
+}
+
+.overview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.overview-card {
+  max-width: 1000px;
+  background: #1c1c1c;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.overview-card h3 {
+  color: #aa00ff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.overview-card p {
+  font-size: 1rem;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+/* CODE SCREENSHOTS --------------- */
+.screenshot-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.screenshot-container img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.screenshot-container img:hover {
+  transform: scale(1.06);
+}
+
+@media (min-width: 768px) {
+  .screenshot-container {
+    flex-direction: row; /* side-by-side */
+  }
+  .screenshot-container img {
+    width: 49%;
+    max-width: none;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 30px 5vw;
+  background: #1d1d1d;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* FOR FOODSPOT ONLY ----- */
+.main-screenshot {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.additional-screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.small-screenshot {
+  width: 48%;
+  max-width: 490px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.small-screenshot:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .additional-screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .small-screenshot {
+    width: 95%;
+  }
+}
