@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Particles Background</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HERO ---------------------------------------- -->
+    <div id="particles-js"></div>
+    <div class="hero">
+      <div class="intro">
+        <h1>Hello! I'm <br /><span id="typed-name"></span></h1>
+        <p>I am a software engineer and front-end developer.</p>
+        <button class="hero-btn">Find out more</button>
+      </div>
+    </div>
+
+    <!-- HEADER -------------------------------------- -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="logo">Hardeep</a>
+        <i class="fa-solid fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <ul id="menu" class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ABOUT --------------------------------------- -->
+    <section class="about">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>Hey, I'm Hardeep!</h2>
+          <p class="about-description">
+            I'm a <span>Physics graduate</span> turned Software engineer, and I
+            love solving problems—whether it's debugging code or figuring out
+            the best way to build something cool.
+          </p>
+          <p class="about-description">
+            My background in physics gave me a solid foundation in
+            <span>critical thinking</span> and <span>problem-solving</span>,
+            which I now apply to coding. I enjoy tackling complex challenges,
+            breaking them down, and creating elegant solutions.
+          </p>
+          <p class="about-description">
+            These days, I build interactive websites using
+            <span>HTML</span>, <span>CSS</span>, <span>JavaScript</span>, and
+            <span>React</span>. I’m always learning and pushing myself to
+            improve my skills.
+          </p>
+          <p class="about-description">
+            When I’m not coding, you’ll probably find me reading about new tech,
+            writing blogs, or figuring out the next thing I want to master!
+          </p>
+          <a href="#contact" class="about-btn">Let's Connect</a>
+        </div>
+
+        <div class="about-image">
+          <img src="assets/Hardeep Kaur Gill - Photo.jpg" alt="Hardeep Kaur" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS ---------------------------------------- -->
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="assets/CSS.svg" alt="CSS Logo" />
+          <p class="css">CSS</p>
+        </div>
+        <div class="skill-card">
+          <img src="assets/HTML.svg" alt="HTML Logo" />
+          <p class="html">HTML</p>
+        </div>
+        <div class="skill-card">
+          <img src="assets/JS.svg" alt="JavaScript Logo" />
+          <p class="js">JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <img src="assets/REACT.svg" alt="React Logo" />
+          <p class="react">React</p>
+        </div>
+        <div class="skill-card">
+          <img src="assets/java.svg" alt="Java Logo" />
+          <p class="java">Java</p>
+        </div>
+        <div class="skill-card">
+          <img src="assets/python.svg" alt="Python Logo" />
+          <p class="python">Python</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="portfolio">
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <div class="project-card">
+            <img src="assets/project1.png" alt="Project 1" />
+            <h3>Pixel Perfect Figma Landing Page</h3>
+            <p>Brief description of the project.</p>
+            <a href="figma-project.html" class="project-link">View Project</a>
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project2.png" alt="Project 2" />
+            <h3>QuantumTech News Articles</h3>
+            <p>Brief description of the project.</p>
+            <a href="quantumtech-project.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project3.png" alt="Project 3" />
+            <h3>FoodSpot</h3>
+            <p>Brief description of the project.</p>
+            <a href="foodspot-project.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+
+          <div class="project-card">
+            <img src="assets/project4.png" alt="Project 4" />
+            <h3>YouTube Clone</h3>
+            <p>Brief description of the project.</p>
+            <a href="youtube-clone-project.html" class="project-link"
+              >View Project</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- CONTACT ---------------------------------------- -->
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <p>Have a question or want to work together? Drop me a message!</p>
+
+      <form class="contact-form">
+        <div class="input-group">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="input-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="input-group">
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+      </form>
+
+      <!-- Social Media Links -->
+      <div class="social-links">
+        <a
+          href="https://leetcode.com/u/harr21/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-solid fa-code"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/hardeep-kaur-gill-3944081a1/"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/HardeepKaur21"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://codepen.io/Harr-Gill"
+          target="_blank"
+          class="social-icon"
+        >
+          <i class="fa-brands fa-codepen"></i>
+        </a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
