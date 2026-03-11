@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Landing Page Overview</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="back-btn-container">
+        <a href="index.html#projects" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+      </div>
+      <a href="index.html" class="logo">Hardeep</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="project-hero">
+      <h1>Figma Landing Page Recreation</h1>
+      <p>
+        A deep dive into how each component was built to match the original
+        Figma design.
+      </p>
+
+      <!-- Project Screenshot -->
+      <div class="project-screenshot-container">
+        <img
+          src="assets/project2.png"
+          alt="Figma Project Screenshot"
+          class="project-screenshot"
+        />
+      </div>
+
+      <a
+        href="https://responsive-layout-harr.netlify.app/"
+        target="_blank"
+        class="live-demo-btn"
+        >View Live Website</a
+      >
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="overview">
+      <h2>Project Breakdown</h2>
+      <p class="intro">
+        The QuantumTech website is designed to show a different layout for a
+        website. It is designed to be responsive. Header and footer are always
+        visible while the content can be viewed with the help of scroll bars.
+      </p>
+
+      <p class="intro">
+        Below are code snippets showcasing key sections of the project. These
+        provide a peek into the implementation of major features rather than the
+        full code structure. Each snippet comes with a brief explanation for
+        those interested in understanding how specific functionalities were
+        built.
+      </p>
+
+      <div class="overview-container">
+        <div class="overview-card">
+          <h3>🔹 Header & Navigation</h3>
+          <p>
+            This code creates a responsive navigation system using HTML, CSS,
+            and JavaScript. The hamburger menu (.burger) is hidden by default
+            and appears on smaller screens (max-width: 600px), allowing users to
+            toggle the navigation. Flexbox is used to align the menu items,
+            while media queries adjust the layout for mobile devices. This
+            approach ensures a clean, user-friendly navigation that adapts
+            seamlessly across different screen sizes.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/layout/header-html.png"
+              alt="Header HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/layout/header-css.png"
+              alt="Header CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+        <div class="overview-card">
+          <h3>🔹 Sidebar & About Section</h3>
+          <p>
+            This code defines a sidebar section using HTML and CSS, designed to
+            provide additional information and article links. The sidebar is
+            styled using flexbox (flex: 1) to ensure it adapts within its parent
+            container while maintaining a fixed height (93%) with scrollable
+            content (overflow-y: auto). The HTML structure includes an "About
+            Us" section, an image, a brief description, and a "More Articles"
+            section with images representing additional content. This setup
+            ensures a clean and structured layout, keeping supplementary content
+            accessible without cluttering the main page.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/layout/side-bar-html.png"
+              alt="Sidebar HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/layout/side-bar-css.png"
+              alt="Sidebar CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+        <div class="overview-card">
+          <h3>🔹 Articles & Blog Layout</h3>
+          <p>
+            This code defines an articles section that takes three-fourths
+            (flex: 3) of the layout, with the sidebar occupying the remaining
+            one-fourth (flex: 1). The article and time elements are used for
+            semantic clarity, improving accessibility and SEO. The CSS utilizes
+            flexbox (display: flex; flex-direction: column;) to create a
+            structured, scrollable layout (overflow-y: auto). Each article is
+            styled with padding and borders (border: 1px solid #ccc;), ensuring
+            a clean and readable design.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/layout/articles-html.png"
+              alt="Articles HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/layout/articles-css.png"
+              alt="Articles CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+        <div class="overview-card">
+          <h3>🔹 Footer</h3>
+          <p>
+            This code defines a simple, centered footer with a dark background
+            (#222) and white text (#fff) for contrast. The HTML includes a
+            call-to-action encouraging users to contribute articles, a contact
+            link, and a tribute message. The CSS ensures the footer is visually
+            distinct with padding (2vh 0) for spacing and centered alignment
+            (text-align: center). The tribute acknowledges Arnold Santos, a
+            fellow bootcamp classmate, who inspired the transformation of this
+            layout into a tech news website.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/layout/footer-html.png"
+              alt="Footer HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/layout/footer-css.png"
+              alt="Footer CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2024 Hardeep | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
