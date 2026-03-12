@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Landing Page Overview</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="projects.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="back-btn-container">
+        <a href="index.html#projects" class="back-btn">
+          <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+      </div>
+      <a href="index.html" class="logo">Hardeep</a>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="project-hero">
+      <h1>Figma Landing Page Recreation</h1>
+      <p>
+        A deep dive into how each component was built to match the original
+        Figma design.
+      </p>
+
+      <!-- Project Screenshot -->
+      <div class="project-screenshot-container">
+        <img
+          src="assets/project4.png"
+          alt="Figma Project Screenshot"
+          class="project-screenshot"
+        />
+      </div>
+
+      <a
+        href="https://youtube-clone-hardeep-kaur.netlify.app/"
+        target="_blank"
+        class="live-demo-btn"
+        >View Live Website</a
+      >
+    </section>
+
+    <!-- OVERVIEW SECTION -->
+    <section class="overview">
+      <h2>Project Breakdown</h2>
+      <p class="intro">
+        This project replicates the main layout of YouTube using HTML, CSS, and
+        JavaScript. More specifically, the screenshot below was used an
+        inspiration:
+      </p>
+
+      <div
+        class="screenshot-container"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 100%;
+        "
+      >
+        <img
+          src="https://i.ibb.co/DDm6TgCT/screencapture-file-Users-mohamedelsayed-Desktop-My-First-Web-App-Archive-youtube-complete-index-html.png"
+          alt="Suggested Footer Improvement Screenshot"
+          class="code-screenshot"
+          style="max-width: 600px; width: 100%; border-radius: 10px"
+        />
+      </div>
+
+      <p class="intro">
+        Below are code snippets showcasing key sections of the project. These
+        provide a peek into the implementation of major features rather than the
+        full code structure. Each snippet comes with a brief explanation for
+        those interested in understanding how specific functionalities were
+        built.
+      </p>
+
+      <div class="overview-container">
+        <div class="overview-card">
+          <h3>🔹 Header & Navigation</h3>
+          <p>
+            This code defines a responsive search bar and header layout using
+            HTML and CSS. The header consists of three sections: a menu logo
+            (left), a search bar (middle), and icons (right). The search bar is
+            structured using flexbox (display: flex; align-items: center; width:
+            628px), ensuring it remains centered and properly aligned. A media
+            query (max-width: 765px) adjusts the search bar microphone size
+            (width: 60px; height: 40px) and icon spacing (padding-left: 10px;
+            width: 30px) to improve usability on smaller screens. This setup
+            ensures a clean and scalable navigation bar, adapting seamlessly to
+            different screen sizes.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/youtube/header-html.png"
+              alt="Header HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/youtube/header-css.png"
+              alt="Header CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+        <div class="overview-card">
+          <h3>🔹 Sidebar Navigation</h3>
+          <p>
+            This code defines a sidebar navigation menu using HTML and CSS,
+            allowing users to navigate different sections. The HTML structures
+            the sidebar with an aside element containing multiple navigation
+            links (a with class .nav-link), each accompanied by an icon (i) and
+            a label (span). The CSS styles the links with flexbox (display:
+            flex; align-items: center; padding: 10px 16px) to align text and
+            icons neatly. The links have a hover effect (background-color:
+            rgb(241, 243, 241); border-radius: 10px), making the menu more
+            interactive.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/youtube/menu-html.png"
+              alt="Sidebar HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/youtube/menu-css.png"
+              alt="Sidebar CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+        <div class="overview-card">
+          <h3>🔹 Video Grid Layout</h3>
+          <p>
+            This code defines a video listing section using HTML and CSS,
+            structured to display videos in a grid-like layout. The HTML
+            consists of multiple .video elements, each containing a thumbnail
+            image, title, creator information, and view count. The CSS applies
+            flexbox (display: flex; flex-wrap: wrap;) to arrange videos
+            responsively, ensuring they adapt to different screen sizes. Each
+            thumbnail has a border-radius effect (15px), which smoothly
+            transitions to 0 on hover (transition: border-radius 0.3s
+            ease-in-out). This layout ensures a modern and engaging video
+            browsing experience, similar to popular video platforms.
+          </p>
+          <div class="screenshot-container">
+            <img
+              src="assets/youtube/videos-html.png"
+              alt="Video Grid HTML Code"
+              class="code-screenshot"
+            />
+            <img
+              src="assets/youtube/videos-css.png"
+              alt="Video Grid CSS Code"
+              class="code-screenshot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2024 Hardeep | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
